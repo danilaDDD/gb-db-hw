@@ -29,7 +29,7 @@ ORDER BY credit_amount, avg_income;
  */
 
 
--- 2 Сколько товаров в категории Meat/Poultry
+-- 2) Сколько товаров в категории Meat/Poultry
 SELECT COUNT(*) AS 'Количество товаров категории Meat/Poultry' FROM Products
 WHERE CategoryID in (SELECT CategoryID FROM Categories WHERE CategoryName = 'Meat/Poultry');
 --6
